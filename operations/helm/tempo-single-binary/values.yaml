@@ -3,7 +3,7 @@ storage:
     capacity: 30G
     storageClassName: local-path
 tempo:
-  image: grafana/tempo:latest
+  image: grafana/tempo:0.3.0
   resources: 
     requests:
       cpu:      1
@@ -13,7 +13,7 @@ tempo:
       protocols:
         thrift_http: null
 tempoQuery:
-  image: grafana/tempo-query:latest
+  image: grafana/tempo-query:0.3.0
   resources: 
     requests:
       cpu:      50m
